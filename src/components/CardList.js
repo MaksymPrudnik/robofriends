@@ -4,7 +4,11 @@ import Card from './Card';
 
 const CardList = ({ robots}) => {
     return (
-        <div>
+        <div style={{
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            placeItems: 'center'
+        }}>
             {
                 robots.map((user, i) => {
                     return (<Card 

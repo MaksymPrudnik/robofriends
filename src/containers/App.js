@@ -37,7 +37,7 @@ class App extends React.Component {
         }
         else {
             return (
-                <div className='tc'>
+                <div className='tc' style={{display: 'flex', flexDirection: 'column', height: '100vh'}}>
                     <h1 className='f1'>Robofriends</h1>
                     <SearchBox searchChange={onSearchChange}/>
                     <Scroll>
